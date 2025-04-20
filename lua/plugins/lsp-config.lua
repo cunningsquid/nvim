@@ -11,7 +11,7 @@ return {
       lazy = false,
       config = function()
          require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "rust_analyzer", "csharpier" },
+            ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls" },
             automatic_installation = true,
          })
       end,
@@ -29,7 +29,7 @@ return {
          lspconfig.rust_analyzer.setup({
             capabilities = capabilities,
          })
-         lspconfig.csharpier.setup({
+         lspconfig.ts_ls.setup({
             capabilities = capabilities,
          })
          vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
