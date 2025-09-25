@@ -3,7 +3,7 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
-vim.wo.relativenumber = true
+vim.wo.number = true
 
 local mason_path = vim.fn.stdpath("data") .. "/mason/bin"
 vim.env.PATH = mason_path .. ":" .. vim.env.PATH
